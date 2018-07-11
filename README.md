@@ -9,6 +9,14 @@ cd cmd
 go run main.go
 ```
 
+## Tests
+
+Run tests with
+
+```
+go test -cover ./...
+```
+
 ## Directories
 
 ### `/cmd`
@@ -28,11 +36,3 @@ Example Web Page. Should return `Content-Type: text/html; charset=utf-8`
 ### `/Status`
 
 Health Check. Should return json `{"STATUS": "UP"}`
-
-## Tests
-
-Run tests with
-
-```
-go test -cover ./...
-```
