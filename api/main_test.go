@@ -42,7 +42,7 @@ func TestHomeHandler(t *testing.T) {
 	}
 
 	rr := httptest.NewRecorder()
-	handler := http.HandlerFunc(HealthCheckHandler)
+	handler := http.HandlerFunc(HomeHandler)
 	handler.ServeHTTP(rr, req)
 
 	// Should be StatusOk
@@ -50,9 +50,9 @@ func TestHomeHandler(t *testing.T) {
 		t.Errorf("handler returned wrong status code: got %v want %v", status, http.StatusOK)
 	}
 
-	// Should be type json
-	if ctype := rr.Header().Get("Content-Type"); ctype != "application/json" {
-		t.Errorf("content type header does not match: got %v want %v", ctype, "application/json")
+	// Should be type text/html
+	if ctype := rr.Header().Get("Content-Type"); ctype != "text/html; charset=utf-8" {
+		t.Errorf("content type header does not match: got %v want %v", ctype, "text/html; charset=utf-8")
 	}
 
 }

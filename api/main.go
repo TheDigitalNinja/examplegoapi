@@ -1,6 +1,7 @@
 package main
 
 import (
+	"html/template"
 	"io"
 	"log"
 	"net/http"
@@ -9,7 +10,10 @@ import (
 )
 
 // HomeHandler TODO
-func HomeHandler(w http.ResponseWriter, r *http.Request) {}
+func HomeHandler(w http.ResponseWriter, r *http.Request) {
+	tmpl := template.Must(template.ParseFiles("../html/index.html"))
+	tmpl.Execute(w, nil)
+}
 
 // HealthCheckHandler respond as up
 func HealthCheckHandler(w http.ResponseWriter, r *http.Request) {
