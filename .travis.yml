@@ -3,7 +3,5 @@ language: go
 go:
   - "1.10.x"
 
-go_import_path: examplegoapi/cmd
-
 script:
   - go test -coverage ./...
