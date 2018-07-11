@@ -8,7 +8,7 @@
       "taskName": "run",
       "args": [
         "-v",
-        "./api/main.go"
+        "./cmd/main.go"
       ],
       "isBuildCommand": true
     },
@@ -17,7 +17,7 @@
       "args": [
         "-v",
         "-cover",
-        "./api/..."
+        "./..."
       ],
       "isTestCommand": true
     }
