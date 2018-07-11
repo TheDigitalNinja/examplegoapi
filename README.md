@@ -8,6 +8,16 @@ I needed some services for testing deployments so I thought I would learn GoLang
 cd cmd
 go run main.go
 ```
+## Endpoints
+
+### `/`
+
+Example Web Page. Should return `Content-Type: text/html; charset=utf-8`
+
+### `/Status`
+
+Health Check. Should return json `{"STATUS": "UP"}`
+
 
 ## Directories
 
