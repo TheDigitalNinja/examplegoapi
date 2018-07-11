@@ -1,5 +1,8 @@
 # Example Go API
 
+[![Go Report Card](https://goreportcard.com/badge/github.com/TheDigitalNinja/examplegoapi)](https://goreportcard.com/report/github.com/TheDigitalNinja/examplegoapi)
+[![Build Status](https://travis-ci.org/TheDigitalNinja/examplegoapi.svg?branch=master)](https://travis-ci.org/TheDigitalNinja/examplegoapi)
+
 I needed some services for testing deployments so I thought I would learn GoLang and just roll my own. 
 
 ## Run
